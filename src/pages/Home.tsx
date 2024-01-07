@@ -1,13 +1,9 @@
-import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
-
 const Home = () => {
   return (
-    <>
-      <Header></Header>
-      <div>Home</div>
-      <Outlet></Outlet>
-    </>
+    <main>
+      <section className="m-4 h-screen border border-black"></section>
+      <section className="m-4 h-screen border border-black"></section>
+    </main>
   );
 };
 

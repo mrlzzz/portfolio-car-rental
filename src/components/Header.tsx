@@ -29,7 +29,7 @@ const Header = () => {
       {/* Header hack - set max-width first then mx-auto, set height using padding */}
       <header
         ref={parentAnimate}
-        className="mx-auto max-w-7xl border border-black px-4 py-6 "
+        className="mx-auto  w-full max-w-7xl border border-black px-4 py-6"
       >
         {/* Desktop navbar */}
         <div className="flex items-center justify-between">
@@ -83,16 +83,43 @@ const Header = () => {
         </div>
         {/* Mobile navbar */}
         {toggleMobileMenu ? (
-          <div
-            className={`flex flex-col text-right font-bold  duration-500 lg:hidden`}
-          >
-            <div className="py-10">
-              <ul>
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Menu</li>
-              </ul>
-            </div>
+          <div className={`flex flex-col text-right lg:hidden`}>
+            {" "}
+            <NavLink
+              to="/"
+              className={activeLinkCallback}
+              onClick={handleMobileMenuClick}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={activeLinkCallback}
+              onClick={handleMobileMenuClick}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={activeLinkCallback}
+              onClick={handleMobileMenuClick}
+            >
+              Contact
+            </NavLink>
+            <NavLink
+              to="/login"
+              className={activeLinkCallback}
+              onClick={handleMobileMenuClick}
+            >
+              Log In
+            </NavLink>
+            <NavLink
+              to="/register"
+              className={activeLinkCallback}
+              onClick={handleMobileMenuClick}
+            >
+              Register
+            </NavLink>
           </div>
         ) : null}
       </header>

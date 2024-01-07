@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
     <main>
-      <section className="m-4 h-screen border border-black"></section>
-      <section className="m-4 h-screen border border-black"></section>
+      <section className="mx-auto my-4 h-screen max-w-7xl border border-black"></section>
+      <section className="mx-auto my-4 h-screen max-w-7xl border border-black"></section>
     </main>
   );
 };

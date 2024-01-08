@@ -83,8 +83,7 @@ const Header = () => {
         </div>
         {/* Mobile navbar */}
         {toggleMobileMenu ? (
-          <div className={`flex flex-col text-right lg:hidden`}>
-            {" "}
+          <div className="flex flex-col p-1 text-right lg:hidden [&>*]:py-1">
             <NavLink
               to="/"
               className={activeLinkCallback}

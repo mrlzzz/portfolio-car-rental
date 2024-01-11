@@ -1,27 +1,32 @@
-import audiImg from "../assets/Models/audi.png";
-import ModelsInfoRow from "./ModelsInfoRow";
-import modelsData from "../data/modelsData.json";
+import modelsData from "../data/modelsData.ts";
 import ModelsButton from "./ModelsButton";
+import ModelsInfoRow from "./ModelsInfoRow";
 import { useState } from "react";
 
 const Models = () => {
   const [currentModel, setCurrentModel] = useState(0);
   const models = modelsData.models;
+
   const buttons = models.map((e, idx) => {
     return (
       <ModelsButton
         key={idx}
         text={e.brand + " " + e.model}
         onClick={() => setCurrentModel(idx)}
+        isActive={idx === currentModel ? true : false}
       />
     );
   });
+
   const infoRows = Object.entries(models[currentModel]).map(
     ([key, value], idx) => {
       if (idx === 0) {
         return (
           <ModelsInfoRow key={key} infoKey={key} infoValue={value} first />
         );
+      }
+      if (key === "img" || key === "price") {
+        return;
       } else {
         return <ModelsInfoRow key={key} infoKey={key} infoValue={value} />;
       }
@@ -40,18 +45,23 @@ const Models = () => {
           </p>
         </div>
         <div className="flex w-full gap-2 ">
-          <div className="bg-red font-poppins flex w-[20%] flex-col gap-2 ">
+          <div className="bg-red flex w-[20%] flex-col gap-2 font-poppins ">
             {buttons}
           </div>
           <div className="flex w-[60%] justify-center bg-yellow-600">
             {/* https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio */}
-            <div className="flex h-auto w-2/3 items-center">
-              <img src={audiImg} className="max-h-full max-w-full" />
+            <div className="flex h-auto w-[90%] items-center">
+              <img
+                src={models[currentModel].img}
+                className="max-h-full max-w-full"
+              />
             </div>
           </div>
           <div className="flex w-[20%] flex-col justify-between bg-yellow-500">
             <div className="flex items-center justify-center gap-2 bg-orange-500 p-2 text-xl text-white">
-              <span className="text-2xl font-bold">$45</span>
+              <span className="text-2xl font-bold">
+                ${models[currentModel].price}
+              </span>
               <span>/</span>
               <span>per day</span>
             </div>

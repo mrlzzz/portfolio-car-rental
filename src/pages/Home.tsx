@@ -5,6 +5,7 @@ import Models from "../components/Models";
 import Fleet from "../components/Fleet";
 import ChooseUs from "../components/ChooseUs";
 import Testimonials from "../components/Testimonials";
+import Faq from "../components/Faq";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Fleet />
       <ChooseUs />
       <Testimonials />
+      <Faq />
     </main>
   );
 };

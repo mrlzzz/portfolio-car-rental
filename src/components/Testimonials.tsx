@@ -16,8 +16,8 @@ const Testimonials = () => {
             experiences with you.
           </p>
         </div>
-        <div className="flex justify-center gap-10 bg-yellow-100">
-          <div className="flex max-w-xl flex-col gap-10 bg-yellow-200 p-12 shadow-xl">
+        <div className="flex items-center justify-center gap-10 bg-yellow-100">
+          <div className="flex h-fit max-w-xl flex-col gap-10 bg-yellow-200 p-12 shadow-xl">
             <p className="text-pretty font-poppins text-2xl">
               "We rented a car from this website and had an amazing experience!
               The booking was easy and the rental rates were very affordable."
@@ -35,8 +35,10 @@ const Testimonials = () => {
           </div>
           <div className="flex max-w-xl flex-col gap-10 bg-yellow-200 p-12 shadow-xl">
             <p className="text-pretty font-poppins text-2xl">
-              "We rented a car from this website and had an amazing experience!
-              The booking was easy and the rental rates were very affordable."
+              "I had an amazing experience with XYZ Car Rentals! The booking
+              process was seamless, and the staff was incredibly helpful and
+              friendly. The car I rented was clean, well-maintained, and exactly
+              what I needed for my trip."
             </p>
             <div className="flex items-center justify-between">
               <span className="flex items-center gap-4">

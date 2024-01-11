@@ -116,7 +116,7 @@ const BookingForm = () => {
                 </div>
                 <div className="flex w-1/3 flex-col justify-end">
                   <button
-                    className="bg-orange-500  p-3 font-bold text-white shadow-sm shadow-orange-400 transition-all duration-300 hover:shadow-md hover:shadow-orange-400"
+                    className="bg-orange-500 p-3 font-bold text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] transition-all duration-150 hover:brightness-95 active:scale-95 active:shadow-none"
                     onClick={(e) => {
                       e.preventDefault();
                     }}

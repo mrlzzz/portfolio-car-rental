@@ -69,7 +69,7 @@ const modelsData = {
       price: 150,
     },
     {
-      brand: "Mercedes-Benz",
+      brand: "Mercedes",
       model: "C-Class",
       year: 2023,
       doors: 4,

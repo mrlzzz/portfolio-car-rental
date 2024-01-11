@@ -4,7 +4,7 @@ const BookingForm = () => {
   return (
     <section className="mx-auto my-4 h-screen max-w-7xl border border-black">
       <div className="flex h-full items-center justify-center">
-        <div className="w-full  border border-black p-16 shadow-lg">
+        <div className="w-full border border-black p-16 shadow-lg">
           <h1 className="mb-5 text-2xl font-bold">Book a car</h1>
           <form>
             <div className="flex flex-col gap-2">

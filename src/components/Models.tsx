@@ -34,7 +34,7 @@ const Models = () => {
   );
 
   return (
-    <section className="mx-auto my-4 h-screen max-w-7xl border border-black">
+    <section className="mx-auto my-4 max-w-7xl border border-black p-2 lg:h-screen">
       <div className="flex h-full flex-col items-center justify-center gap-16 bg-yellow-300">
         <div className="flex flex-col items-center gap-5 bg-yellow-400 text-center">
           <span className="text-2xl font-medium">Vehicle Models</span>
@@ -44,20 +44,20 @@ const Models = () => {
             adventure or business trip
           </p>
         </div>
-        <div className="flex w-full gap-2 ">
-          <div className="bg-red flex w-[20%] flex-col gap-2 font-poppins ">
+        <div className="flex w-full flex-col gap-2 lg:flex-row">
+          <div className="bg-red flex flex-col gap-2 font-poppins lg:w-[20%] ">
             {buttons}
           </div>
-          <div className="flex w-[60%] justify-center bg-yellow-600">
+          <div className="flex justify-center bg-yellow-600 lg:w-[60%]">
             {/* https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio */}
-            <div className="flex h-auto w-[90%] items-center">
+            <div className="flex h-auto items-center lg:w-[90%]">
               <img
                 src={models[currentModel].img}
                 className="max-h-full max-w-full"
               />
             </div>
           </div>
-          <div className="flex w-[20%] flex-col justify-between bg-yellow-500">
+          <div className="flex flex-col justify-between gap-2 bg-yellow-500 lg:w-[20%]">
             <div className="flex items-center justify-center gap-2 bg-orange-500 p-2 text-xl text-white">
               <span className="text-2xl font-bold">
                 ${models[currentModel].price}
@@ -66,7 +66,6 @@ const Models = () => {
               <span>per day</span>
             </div>
             <div>{infoRows}</div>
-
             <button className=" w-full bg-orange-500 p-4 text-xl  font-bold uppercase text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] duration-150 hover:brightness-95 active:scale-95 active:shadow-none">
               Reserve Now
             </button>

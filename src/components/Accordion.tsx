@@ -32,7 +32,7 @@ const Accordion = ({ items }: AccordionProps) => {
   });
 
   return (
-    <div className="flex w-2/3 flex-1 flex-col gap-1 bg-white p-10 text-left">
+    <div className="flex flex-1 flex-col gap-1 bg-white p-2 text-left lg:w-2/3 lg:p-10">
       {accordionItems}
     </div>
   );

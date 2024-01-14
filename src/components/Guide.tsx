@@ -4,13 +4,13 @@ import letsDriveImg from "../assets/Guide/lets-drive.png";
 
 const Guide = () => {
   return (
-    <section className="mx-auto my-4 h-screen max-w-7xl border border-black">
-      <div className="flex h-full flex-col items-center justify-center gap-24">
+    <section className="mx-auto my-4 max-w-7xl border border-black p-2 lg:h-screen">
+      <div className="flex h-full flex-col items-center justify-center gap-8 lg:gap-24">
         <div className="flex flex-col gap-5 text-center">
           <span className="text-2xl font-medium">Plan your trip now</span>
           <h1 className="text-5xl font-bold">Quick & easy car rental</h1>
         </div>
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row">
           <div className="flex flex-1 flex-col items-center gap-3 text-center ">
             <img className="w-44" src={selectCarImg} alt="Select Car Image" />
             <h1 className="text-2xl font-bold">Select Car</h1>

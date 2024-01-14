@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "get-mobile": `url('/src/assets/Mobile.png')`,
+      },
+    },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
     },

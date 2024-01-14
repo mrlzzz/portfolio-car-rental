@@ -5,8 +5,8 @@ import pricingImg from "../assets/ChooseUs/pricing.png";
 
 const ChooseUs = () => {
   return (
-    <section className="mx-auto my-4 h-screen max-w-7xl border border-black">
-      <div className="flex h-full items-center justify-around bg-yellow-200">
+    <section className="mx-auto my-4 max-w-7xl border border-black p-2 lg:h-screen">
+      <div className="flex h-full flex-col items-center justify-around gap-4 bg-yellow-200 lg:flex-row lg:gap-0">
         <div className="flex flex-col gap-2 bg-yellow-300">
           <p className="text-xl font-bold">Why Choose Us</p>
           <h1 className=" max-w-md text-4xl font-bold">
@@ -19,8 +19,8 @@ const ChooseUs = () => {
             the bank. Our deals are designed to give you the ultimate renting
             experience, so don't miss out on your chance to save big.
           </p>
-          <button className="w-fit rounded-sm bg-orange-500 px-7 py-4 font-bold text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] transition-all duration-150 hover:brightness-95 active:scale-95 active:shadow-none">
-            <span className="flex items-center gap-2">
+          <button className="rounded-sm bg-orange-500 px-7 py-4 font-bold text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] transition-all duration-150 hover:brightness-95 active:scale-95 active:shadow-none lg:w-fit">
+            <span className="flex items-center justify-center gap-2 lg:justify-start">
               Find Details<Icon type="arrRight"></Icon>
             </span>
           </button>

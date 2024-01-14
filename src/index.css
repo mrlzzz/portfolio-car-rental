@@ -32,3 +32,11 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
+
+/* tailwind: lg:bg-get-mobile (defined in theme extension) bg-[center_10px] bg-no-repeat */
+.bg-image {
+  background-image: url("src/assets/Mobile.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center 10px;
+}

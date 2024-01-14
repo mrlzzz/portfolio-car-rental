@@ -2,15 +2,15 @@ import Icon from "../utils/Icon";
 
 const BookingForm = () => {
   return (
-    <section className="mx-auto my-4 h-screen max-w-7xl border border-black">
+    <section className="mx-auto my-4 h-screen max-w-7xl border border-black p-2">
       <div className="flex h-full items-center justify-center">
-        <div className="w-full border border-black p-16 shadow-lg">
+        <div className="w-full border border-black shadow-lg lg:p-16">
           <h1 className="mb-5 text-2xl font-bold">Book a car</h1>
           <form>
             <div className="flex flex-col gap-2">
               {/* Form row #1 */}
-              <div className="flex gap-2">
-                <div className="flex w-1/3 flex-col">
+              <div className="flex flex-col gap-2 lg:flex-row">
+                <div className="flex flex-col lg:w-1/3">
                   <label
                     className="my-2 flex gap-2 font-bold"
                     htmlFor="car-type"
@@ -31,7 +31,7 @@ const BookingForm = () => {
                     <option value="dacia">Dacia</option>
                   </select>
                 </div>
-                <div className="flex w-1/3 flex-col">
+                <div className="flex flex-col lg:w-1/3">
                   <label
                     className="my-2 flex gap-2 font-bold"
                     htmlFor="pick-up-location"
@@ -55,7 +55,7 @@ const BookingForm = () => {
                     <option value="kbh-sv">København SV</option>
                   </select>
                 </div>
-                <div className="flex w-1/3 flex-col">
+                <div className="flex flex-col lg:w-1/3">
                   <label
                     className="my-2 flex gap-2 font-bold"
                     htmlFor="drop-off-location"
@@ -81,8 +81,8 @@ const BookingForm = () => {
                 </div>
               </div>
               {/* Form row #2 */}
-              <div className="flex gap-2">
-                <div className="flex w-1/3 flex-col">
+              <div className="flex flex-col gap-2 lg:flex-row">
+                <div className="flex flex-col lg:w-1/3">
                   <label
                     className="my-2 flex gap-2 font-bold"
                     htmlFor="pick-up-date"
@@ -98,7 +98,7 @@ const BookingForm = () => {
                     className="p-3"
                   ></input>
                 </div>
-                <div className="flex w-1/3 flex-col">
+                <div className="flex flex-col lg:w-1/3">
                   <label
                     className="my-2 flex gap-2 font-bold"
                     htmlFor="drop-off-date"
@@ -114,7 +114,7 @@ const BookingForm = () => {
                     className="p-3"
                   ></input>
                 </div>
-                <div className="flex w-1/3 flex-col justify-end">
+                <div className="mt-3 flex flex-col justify-end lg:mt-0 lg:w-1/3">
                   <button
                     className="bg-orange-500 p-3 font-bold text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] transition-all duration-150 hover:brightness-95 active:scale-95 active:shadow-none"
                     onClick={(e) => {

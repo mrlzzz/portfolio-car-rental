@@ -4,9 +4,9 @@ import apple from "../assets/app-store-badge.svg";
 const GetMobile = () => {
   return (
     <section
-      className={`lg:bg-get-mobile mx-auto my-4 flex justify-center border border-black bg-[center_10px] bg-no-repeat p-2 lg:h-[50vh]`}
+      className={`lg:bg-get-mobile mx-auto flex justify-center border border-black bg-[center_10px] bg-no-repeat p-2 lg:h-[50vh]`}
     >
-      <div className="flex h-full w-[80rem] items-center justify-start  border border-red-300">
+      <div className="flex h-full w-[80rem] items-center justify-start  border border-red-300 p-3">
         <div className="relative flex max-w-lg flex-col gap-10">
           <h1 className="text-4xl font-bold">
             Download our app to get most out of it

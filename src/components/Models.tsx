@@ -41,9 +41,9 @@ const Models = () => {
   };
 
   return (
-    <section className="mx-auto my-4 max-w-7xl border border-black p-2 lg:h-screen">
-      <div className="flex h-full flex-col items-center justify-center gap-16 bg-yellow-300">
-        <div className="flex flex-col items-center gap-5 bg-yellow-400 text-center">
+    <section className="mx-auto my-4 max-w-7xl border border-black p-2 ">
+      <div className="flex h-full flex-col items-center justify-center gap-16 ">
+        <div className="flex flex-col items-center gap-5 text-center">
           <span className="text-2xl font-medium">Vehicle Models</span>
           <h1 className="text-5xl font-bold">Our rental fleet</h1>
           <p className="w-2/3 text-gray-600">
@@ -53,7 +53,7 @@ const Models = () => {
         </div>
         <div className="flex w-full flex-col gap-2 lg:flex-row">
           {/* Desktop navigation */}
-          <div className="bg-red hidden flex-col gap-2 font-poppins lg:flex lg:w-[20%]">
+          <div className="bg-red hidden flex-col gap-2 font-poppins lg:flex lg:w-[20%] lg:border-r lg:border-gray-200">
             {buttons}
           </div>
           {/* Mobile navigation */}
@@ -79,7 +79,7 @@ const Models = () => {
             </button>
           </div>
 
-          <div className="flex justify-center bg-yellow-600 lg:w-[60%]">
+          <div className="flex justify-center   lg:w-[60%]">
             {/* https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio */}
             <div className="flex h-[40vh] items-center lg:h-auto lg:w-[90%]">
               <img
@@ -88,7 +88,7 @@ const Models = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-between gap-2 bg-yellow-500 lg:w-[20%]">
+          <div className="flex flex-col justify-between gap-2 lg:w-[20%] lg:border-l lg:border-gray-200">
             <div className="flex items-center justify-center gap-2 bg-orange-500 p-2 text-xl text-white">
               <span className="text-2xl font-bold">
                 ${models[currentModel].price}

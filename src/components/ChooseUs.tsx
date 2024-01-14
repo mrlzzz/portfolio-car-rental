@@ -6,8 +6,8 @@ import pricingImg from "../assets/ChooseUs/pricing.png";
 const ChooseUs = () => {
   return (
     <section className="mx-auto my-4 max-w-7xl border border-black p-2 lg:h-screen">
-      <div className="flex h-full flex-col items-center justify-around gap-4 bg-yellow-200 lg:flex-row lg:gap-0">
-        <div className="flex flex-col gap-2 bg-yellow-300">
+      <div className="flex h-full flex-col items-center justify-around gap-10 p-3 lg:flex-row lg:gap-0">
+        <div className="flex flex-col gap-2">
           <p className="text-xl font-bold">Why Choose Us</p>
           <h1 className=" max-w-md text-4xl font-bold">
             Best valued deals you will ever find
@@ -25,9 +25,9 @@ const ChooseUs = () => {
             </span>
           </button>
         </div>
-        <div className="flex flex-col gap-8 bg-yellow-300">
-          <div className="flex items-center justify-center gap-3 bg-yellow-400">
-            <img className="bg-yellow-500" src={driveImg} alt="Car graphic" />
+        <div className="flex flex-col gap-8 ">
+          <div className="flex items-center justify-center gap-3 ">
+            <img src={driveImg} alt="Car graphic" />
             <div className="flex flex-col gap-3">
               <h1 className="text-2xl font-bold">Cross Country Drive</h1>
               <p className="max-w-xs text-pretty text-gray-500">
@@ -36,8 +36,8 @@ const ChooseUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-3 bg-yellow-400">
-            <img className="bg-yellow-500" src={pricingImg} alt="Car graphic" />
+          <div className="flex items-center justify-center gap-3 ">
+            <img className="" src={pricingImg} alt="Car graphic" />
             <div className="flex flex-col gap-3">
               <h1 className="text-2xl font-bold">All Inclusive Pricing</h1>
               <p className="max-w-xs text-pretty text-gray-500">
@@ -46,12 +46,8 @@ const ChooseUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-3 bg-yellow-400">
-            <img
-              className="bg-yellow-500"
-              src={noChargesImg}
-              alt="Car graphic"
-            />
+          <div className="flex items-center justify-center gap-3 ">
+            <img className="" src={noChargesImg} alt="Car graphic" />
             <div className="flex flex-col gap-3">
               <h1 className="text-2xl font-bold">No Hidden Charges</h1>
               <p className="max-w-xs text-pretty text-gray-500">

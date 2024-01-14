@@ -29,7 +29,7 @@ const Header = () => {
       {/* Header hack - set max-width first then mx-auto, set height using padding */}
       <header
         ref={parentAnimate}
-        className="mx-auto  w-full max-w-7xl border border-black px-4 py-6"
+        className="mx-auto  w-full max-w-7xl border border-b-black px-4 py-6"
       >
         {/* Desktop navbar */}
         <div className="flex items-center justify-between">

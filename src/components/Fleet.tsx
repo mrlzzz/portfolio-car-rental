@@ -13,7 +13,7 @@ const Fleet = () => {
             <span className="text-orange-500">24/7</span> Support.
           </p>
         </div>
-        <div className=" hidden bg-yellow-600 lg:block">
+        <div className=" hidden lg:block">
           <img
             className=""
             src={fleetImg}

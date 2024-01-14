@@ -2,9 +2,9 @@ import Icon from "../utils/Icon";
 
 const BookingForm = () => {
   return (
-    <section className="mx-auto my-4 h-screen max-w-7xl border border-black p-2">
+    <section className="mx-auto my-4 h-screen max-w-7xl  p-2">
       <div className="flex h-full items-center justify-center">
-        <div className="w-full border border-black shadow-lg lg:p-16">
+        <div className="w-full p-3 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-16">
           <h1 className="mb-5 text-2xl font-bold">Book a car</h1>
           <form>
             <div className="flex flex-col gap-2">
@@ -18,7 +18,11 @@ const BookingForm = () => {
                     <Icon type="car" />
                     Car Type
                   </label>
-                  <select className="p-3" id="car-type" name="car-type">
+                  <select
+                    className="border border-black/25 p-3"
+                    id="car-type"
+                    name="car-type"
+                  >
                     {/* `disabled` and `null` value indicate placeholder */}
                     <option value="" disabled>
                       Select your car type
@@ -40,7 +44,7 @@ const BookingForm = () => {
                     Pick-up location
                   </label>
                   <select
-                    className="p-3 "
+                    className="border border-black/25 p-3"
                     id="pick-up-location"
                     name="pick-up-location"
                   >
@@ -64,7 +68,7 @@ const BookingForm = () => {
                     Drop-off location
                   </label>
                   <select
-                    className="p-3"
+                    className="border border-black/25 p-3"
                     id="drop-off-location"
                     name="drop-off-location"
                   >
@@ -95,7 +99,7 @@ const BookingForm = () => {
                     id="pick-up-date"
                     name="pick-up-date"
                     placeholder="dd/mm/yy"
-                    className="p-3"
+                    className="border border-black/25 p-3"
                   ></input>
                 </div>
                 <div className="flex flex-col lg:w-1/3">
@@ -111,7 +115,7 @@ const BookingForm = () => {
                     id="drop-off-date"
                     name="drop-off-date"
                     placeholder="dd/mm/yy"
-                    className="p-3"
+                    className="border border-black/25 p-3"
                   ></input>
                 </div>
                 <div className="mt-3 flex flex-col justify-end lg:mt-0 lg:w-1/3">

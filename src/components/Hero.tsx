@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="mx-auto my-4 h-screen max-w-7xl border border-black p-2">
       <div className="flex h-full">
-        <div className="flex h-full w-full flex-col justify-center text-pretty border border-black lg:w-[40%]">
+        <div className="flex h-full w-full flex-col justify-center text-pretty  p-3 lg:w-[40%]">
           <p className="my-2 text-xl font-extrabold">Plan your trip now</p>
           <h1 className="text-5xl/tight font-bold">
             Save <span className="text-orange-500">big</span> with our car

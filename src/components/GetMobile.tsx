@@ -1,8 +1,5 @@
-import mobile from "../assets/Mobile.png";
 import google from "../assets/google-play-badge.png";
 import apple from "../assets/app-store-badge.svg";
-
-console.log(mobile);
 
 const GetMobile = () => {
   return (

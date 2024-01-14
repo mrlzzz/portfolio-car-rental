@@ -1,4 +1,5 @@
 import modelsData from "../data/modelsData.ts";
+import Icon from "../utils/Icon.tsx";
 import ModelsButton from "./ModelsButton";
 import ModelsInfoRow from "./ModelsInfoRow";
 import { useState } from "react";
@@ -33,6 +34,12 @@ const Models = () => {
     },
   );
 
+  const handleModelChange = (delta: number) => {
+    // Add `models.length` before modulo to ensure non-negative `newIndex`
+    const newIndex = (currentModel + delta + models.length) % models.length;
+    setCurrentModel(newIndex);
+  };
+
   return (
     <section className="mx-auto my-4 max-w-7xl border border-black p-2 lg:h-screen">
       <div className="flex h-full flex-col items-center justify-center gap-16 bg-yellow-300">
@@ -45,12 +52,36 @@ const Models = () => {
           </p>
         </div>
         <div className="flex w-full flex-col gap-2 lg:flex-row">
-          <div className="bg-red flex flex-col gap-2 font-poppins lg:w-[20%] ">
+          {/* Desktop navigation */}
+          <div className="bg-red hidden flex-col gap-2 font-poppins lg:flex lg:w-[20%]">
             {buttons}
           </div>
+          {/* Mobile navigation */}
+          <div className="flex items-center justify-between gap-2 bg-orange-500 font-poppins text-xl font-semibold text-white lg:hidden">
+            <button
+              onClick={() => {
+                handleModelChange(-1);
+              }}
+              className=" px-10 py-6"
+            >
+              <Icon type="arrLeft" />
+            </button>
+            <span className="text-balance text-center">
+              {models[currentModel].brand + " " + models[currentModel].model}
+            </span>
+            <button
+              onClick={() => {
+                handleModelChange(1);
+              }}
+              className=" px-10 py-6"
+            >
+              <Icon type="arrRight" />
+            </button>
+          </div>
+
           <div className="flex justify-center bg-yellow-600 lg:w-[60%]">
             {/* https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio */}
-            <div className="flex h-auto items-center lg:w-[90%]">
+            <div className="flex h-[40vh] items-center lg:h-auto lg:w-[90%]">
               <img
                 src={models[currentModel].img}
                 className="max-h-full max-w-full"

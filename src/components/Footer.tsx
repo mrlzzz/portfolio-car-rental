@@ -3,8 +3,8 @@ import Icon from "../utils/Icon";
 const Footer = () => {
   return (
     <footer className="flex items-center justify-center border-t border-black  p-2 lg:h-[50vh]">
-      <section className="mx-auto flex h-full w-full max-w-7xl flex-col gap-10 border border-black py-10 text-center lg:flex-row lg:gap-6 lg:py-20 lg:text-left">
-        <div className="flex flex-1 flex-col gap-4 ">
+      <section className="mx-auto flex h-full w-full max-w-7xl flex-col gap-10 border border-black p-3 py-10 text-center lg:flex-row lg:gap-6 lg:py-20 lg:text-left">
+        <div className="flex flex-1 flex-col gap-4">
           <h1 className="text-xl ">
             <span className="font-bold">CAR</span> Rental
           </h1>

@@ -7,7 +7,7 @@ const GetMobile = () => {
       className={`mx-auto my-32 flex justify-center bg-[center_-20px] bg-no-repeat p-2 lg:my-0 lg:h-[50vh] lg:bg-get-mobile`}
     >
       <div className="flex h-full w-[80rem] items-center justify-start p-3">
-        <div className="relative flex max-w-lg flex-col gap-10">
+        <div className="relative flex max-w-lg flex-col items-center gap-10 text-center">
           <h1 className="text-4xl font-bold">
             Download our app to get most out of it
           </h1>

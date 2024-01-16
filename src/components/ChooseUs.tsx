@@ -5,7 +5,7 @@ import pricingImg from "../assets/ChooseUs/pricing.png";
 
 const ChooseUs = () => {
   return (
-    <section className="mx-auto my-32 max-w-7xl p-2 lg:my-0 lg:h-fit">
+    <section className="mx-auto mb-32 max-w-7xl p-2 lg:mb-0 lg:h-fit">
       <div className="flex h-full flex-col  justify-around gap-10 p-3 lg:flex-row lg:gap-0">
         <div className="flex flex-col gap-2">
           <p className="text-xl font-bold">Why Choose Us</p>

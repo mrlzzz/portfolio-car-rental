@@ -14,7 +14,7 @@ const AccordionItem = ({ data, isActive, onClick }: AccordionItemProps) => {
   return (
     <>
       <button
-        className="flex items-center justify-between border-b border-black/50 bg-white p-2 text-left duration-150 hover:brightness-95 lg:p-4 lg:px-8"
+        className="flex items-center justify-between border-b border-black/50 bg-white px-8 py-6 text-left duration-150 hover:brightness-95"
         onClick={onClick}
       >
         {question}

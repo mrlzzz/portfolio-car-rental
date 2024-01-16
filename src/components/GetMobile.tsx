@@ -4,7 +4,7 @@ import apple from "../assets/app-store-badge.svg";
 const GetMobile = () => {
   return (
     <section
-      className={`mx-auto flex justify-center bg-[center_-20px] bg-no-repeat p-2 lg:h-[50vh] lg:bg-get-mobile`}
+      className={`mx-auto my-32 flex justify-center bg-[center_-20px] bg-no-repeat p-2 lg:my-0 lg:h-[50vh] lg:bg-get-mobile`}
     >
       <div className="flex h-full w-[80rem] items-center justify-start p-3">
         <div className="relative flex max-w-lg flex-col gap-10">

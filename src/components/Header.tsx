@@ -29,14 +29,14 @@ const Header = () => {
       {/* Header hack - set max-width first then mx-auto, set height using padding */}
       <header
         ref={parentAnimate}
-        className="mx-auto w-full max-w-7xl border border-b-black px-4 py-6"
+        className="mx-auto w-full max-w-7xl px-4 py-6"
       >
         {/* Desktop navbar */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between font-medium">
           <nav>
             <NavLink to="/">Logo</NavLink>
           </nav>
-          <nav className="hidden lg:flex [&>span:not(:first-child)]:ml-2">
+          <nav className="hidden lg:flex [&>span:not(:first-child)]:ml-4">
             <span>
               <NavLink to="/" className={activeLinkCallback}>
                 Home
@@ -53,11 +53,13 @@ const Header = () => {
               </NavLink>
             </span>
           </nav>
-          <nav className="hidden lg:flex [&>span:not(:first-child)]:ml-2">
+          <nav className="hidden items-center lg:flex [&>span:not(:first-child)]:ml-4">
             <span>
-              <NavLink to="/login">Log In</NavLink>
+              <NavLink to="/login" className={activeLinkCallback}>
+                Log In
+              </NavLink>
             </span>
-            <span>
+            <span className=" bg-orange-500 px-4 py-2 font-semibold  text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] duration-150 hover:brightness-95 active:scale-95 active:shadow-none">
               <NavLink to="/register">Register</NavLink>
             </span>
           </nav>

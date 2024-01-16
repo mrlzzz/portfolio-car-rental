@@ -3,7 +3,7 @@ import HeroCar from "../assets/hero-car.png";
 
 const Hero = () => {
   return (
-    <section className="mx-auto my-4 h-[75vh] max-w-7xl p-2">
+    <section className="mx-auto my-4 h-screen max-w-7xl p-2 lg:h-[75vh]">
       <div className="flex h-full">
         <div className="flex h-full w-full flex-col justify-center text-pretty  p-3 lg:w-[40%]">
           <p className="my-2 text-xl font-extrabold">Plan your trip now</p>

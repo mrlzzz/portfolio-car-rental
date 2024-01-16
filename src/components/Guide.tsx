@@ -4,7 +4,7 @@ import letsDriveImg from "../assets/Guide/lets-drive.png";
 
 const Guide = () => {
   return (
-    <section className="mx-auto my-4 max-w-7xl p-2 lg:h-[75vh] ">
+    <section className="mx-auto my-20 max-w-7xl p-2 lg:my-4 lg:h-[75vh]">
       <div className="flex h-full flex-col items-center justify-center gap-8 lg:gap-24">
         <div className="flex flex-col gap-5 text-center">
           <span className="text-2xl font-medium">Plan your trip now</span>

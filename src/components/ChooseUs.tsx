@@ -5,7 +5,7 @@ import pricingImg from "../assets/ChooseUs/pricing.png";
 
 const ChooseUs = () => {
   return (
-    <section className="mx-auto max-w-7xl p-2 lg:h-fit">
+    <section className="mx-auto my-32 max-w-7xl p-2 lg:my-0 lg:h-fit">
       <div className="flex h-full flex-col  justify-around gap-10 p-3 lg:flex-row lg:gap-0">
         <div className="flex flex-col gap-2">
           <p className="text-xl font-bold">Why Choose Us</p>
@@ -25,9 +25,9 @@ const ChooseUs = () => {
             </span>
           </button>
         </div>
-        <div className="flex flex-col gap-8 ">
+        <div className="flex flex-col items-start gap-8 lg:items-center">
           <div className="flex items-center justify-center gap-3 ">
-            <img src={driveImg} alt="Car graphic" />
+            <img src={driveImg} width="105px" alt="Car graphic" />
             <div className="flex flex-col gap-3">
               <h1 className="text-2xl font-bold">Cross Country Drive</h1>
               <p className="max-w-xs text-pretty text-gray-500">
@@ -37,7 +37,7 @@ const ChooseUs = () => {
             </div>
           </div>
           <div className="flex items-center justify-center gap-3 ">
-            <img className="" src={pricingImg} alt="Car graphic" />
+            <img width="105px" src={pricingImg} alt="Car graphic" />
             <div className="flex flex-col gap-3">
               <h1 className="text-2xl font-bold">All Inclusive Pricing</h1>
               <p className="max-w-xs text-pretty text-gray-500">
@@ -47,7 +47,7 @@ const ChooseUs = () => {
             </div>
           </div>
           <div className="flex items-center justify-center gap-3 ">
-            <img className="" src={noChargesImg} alt="Car graphic" />
+            <img width="105px" src={noChargesImg} alt="Car graphic" />
             <div className="flex flex-col gap-3">
               <h1 className="text-2xl font-bold">No Hidden Charges</h1>
               <p className="max-w-xs text-pretty text-gray-500">

@@ -4,7 +4,7 @@ import userImg_2 from "../assets/Testimonials/user-img-2.jpg";
 
 const Testimonials = () => {
   return (
-    <section className="mx-auto my-4 max-w-7xl p-2 lg:h-screen">
+    <section className="mx-auto my-32 max-w-7xl p-2 lg:my-4 lg:h-screen">
       <div className="flex h-full flex-col justify-center gap-10 p-3">
         <div className="flex flex-col items-center gap-5  text-center">
           <span className="text-2xl font-medium">Reviewed by People</span>
@@ -17,7 +17,7 @@ const Testimonials = () => {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-10  lg:flex-row">
-          <div className="flex h-fit max-w-xl flex-col gap-10  p-6 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-12">
+          <div className="flex h-fit max-w-xl flex-col gap-10  p-10 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-12">
             <p className="text-pretty font-poppins text-xl lg:text-2xl">
               "We rented a car from this website and had an amazing experience!
               The booking was easy and the rental rates were very affordable."
@@ -33,7 +33,7 @@ const Testimonials = () => {
               <Icon type="quote" />
             </div>
           </div>
-          <div className="flex max-w-xl flex-col gap-10  p-6 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-12">
+          <div className="flex max-w-xl flex-col gap-10  p-10 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-12">
             <p className="text-pretty font-poppins text-xl lg:text-2xl">
               "I had an amazing experience with XYZ Car Rentals! The booking
               process was seamless, and the staff was incredibly helpful and

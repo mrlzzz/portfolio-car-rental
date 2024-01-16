@@ -2,14 +2,14 @@ import Icon from "../utils/Icon";
 
 const BookingForm = () => {
   return (
-    <section className="mx-auto my-4 h-[60vh] max-w-7xl p-2">
+    <section className="mx-auto my-4 h-screen max-w-7xl p-4 lg:h-[60vh]">
       <div className="flex h-full items-center justify-center">
-        <div className="w-full p-3 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-16">
-          <h1 className="mb-5 text-2xl font-bold">Book a car</h1>
+        <div className="w-full p-5 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-16">
+          <h1 className="mb-8 text-2xl font-bold">Book a car</h1>
           <form>
             <div className="flex flex-col gap-2">
               {/* Form row #1 */}
-              <div className="flex flex-col gap-2 lg:flex-row">
+              <div className="flex flex-col gap-4 lg:flex-row">
                 <div className="flex flex-col lg:w-1/3">
                   <label
                     className="my-2 flex gap-2 font-bold"
@@ -85,7 +85,7 @@ const BookingForm = () => {
                 </div>
               </div>
               {/* Form row #2 */}
-              <div className="flex flex-col gap-2 lg:flex-row">
+              <div className="flex flex-col gap-4 lg:flex-row">
                 <div className="flex flex-col lg:w-1/3">
                   <label
                     className="my-2 flex gap-2 font-bold"

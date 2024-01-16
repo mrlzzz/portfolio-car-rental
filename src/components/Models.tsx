@@ -41,7 +41,7 @@ const Models = () => {
   };
 
   return (
-    <section className="mx-auto my-4 max-w-7xl border border-black p-2 ">
+    <section className="mx-auto my-4 max-w-7xl  p-2 lg:my-20">
       <div className="flex h-full flex-col items-center justify-center gap-16 ">
         <div className="flex flex-col items-center gap-5 text-center">
           <span className="text-2xl font-medium">Vehicle Models</span>
@@ -53,7 +53,7 @@ const Models = () => {
         </div>
         <div className="flex w-full flex-col gap-2 lg:flex-row">
           {/* Desktop navigation */}
-          <div className="bg-red hidden flex-col gap-2 font-poppins lg:flex lg:w-[20%] lg:border-r lg:border-gray-200">
+          <div className="bg-red hidden flex-col gap-2 font-poppins lg:flex lg:w-[20%] ">
             {buttons}
           </div>
           {/* Mobile navigation */}
@@ -88,7 +88,7 @@ const Models = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-between gap-2 lg:w-[20%] lg:border-l lg:border-gray-200">
+          <div className="flex flex-col justify-between gap-2 lg:w-[20%] ">
             <div className="flex items-center justify-center gap-2 bg-orange-500 p-2 text-xl text-white">
               <span className="text-2xl font-bold">
                 ${models[currentModel].price}

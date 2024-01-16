@@ -4,7 +4,7 @@ import userImg_2 from "../assets/Testimonials/user-img-2.jpg";
 
 const Testimonials = () => {
   return (
-    <section className="mx-auto my-4 max-w-7xl border border-black p-2 lg:h-screen">
+    <section className="mx-auto my-4 max-w-7xl p-2 lg:h-screen">
       <div className="flex h-full flex-col justify-center gap-10 p-3">
         <div className="flex flex-col items-center gap-5  text-center">
           <span className="text-2xl font-medium">Reviewed by People</span>

@@ -2,13 +2,13 @@ import Icon from "../utils/Icon";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center border-t border-black  p-2 lg:h-[50vh]">
-      <section className="mx-auto flex h-full w-full max-w-7xl flex-col gap-10 border border-black p-3 py-10 text-center lg:flex-row lg:gap-6 lg:py-20 lg:text-left">
+    <footer className="flex items-center justify-center bg-gray-800 p-2 text-gray-200 lg:h-[50vh]">
+      <section className="mx-auto flex h-full w-full max-w-7xl flex-col gap-10  p-3 py-10 text-center lg:flex-row lg:gap-6 lg:py-20 lg:text-left">
         <div className="flex flex-1 flex-col gap-4">
           <h1 className="text-xl ">
             <span className="font-bold">CAR</span> Rental
           </h1>
-          <p className="text-gray-500">
+          <p className="text-gray-400">
             We offer a big range of vehicles for all your driving needs. We have
             the perfect car to meet your needs.
           </p>
@@ -57,7 +57,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-1 flex-col gap-2 border ">
+        <div className="flex flex-1 flex-col gap-2">
           <h1 className="text-xl font-bold uppercase">Working Hours</h1>
           <ul className="flex flex-col gap-1">
             <li>Mon - Fri: 9:00AM - 9:00PM</li>
@@ -65,7 +65,7 @@ const Footer = () => {
             <li>Sun: Closed</li>
           </ul>
         </div>
-        <div className="flex flex-1 flex-col gap-4 border ">
+        <div className="flex flex-1 flex-col gap-4">
           <div className="flex flex-col gap-2">
             <h1 className="text-xl font-bold uppercase">Subscription</h1>
             <p>Subscribe your Email address for latest news & updates.</p>
@@ -74,7 +74,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Enter your Email address"
-              className="w-full border-b border-black/50 bg-black/5 p-4 placeholder:text-center"
+              className="w-full border-b bg-gray-400 p-4 text-black placeholder:text-center placeholder:text-gray-800"
             />
             <button className=" w-full bg-orange-500 p-4 text-xl  font-bold uppercase text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] duration-150 hover:brightness-95 active:scale-95 active:shadow-none">
               Submit

@@ -2,7 +2,7 @@ import Icon from "../utils/Icon";
 
 const BookingForm = () => {
   return (
-    <section className="mx-auto my-4 h-screen max-w-7xl  p-2">
+    <section className="mx-auto my-4 h-[60vh] max-w-7xl p-2">
       <div className="flex h-full items-center justify-center">
         <div className="w-full p-3 shadow-[0px_8px_30px_-3px_rgba(0,0,0,0.3)] lg:p-16">
           <h1 className="mb-5 text-2xl font-bold">Book a car</h1>

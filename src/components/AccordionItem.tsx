@@ -14,7 +14,7 @@ const AccordionItem = ({ data, isActive, onClick }: AccordionItemProps) => {
   return (
     <>
       <button
-        className="flex items-center justify-between border border-black bg-white p-2 text-left duration-150 hover:brightness-95 lg:p-4"
+        className="flex items-center justify-between border-b border-black/50 bg-white p-2 text-left duration-150 hover:brightness-95 lg:p-4 lg:px-8"
         onClick={onClick}
       >
         {question}
@@ -29,7 +29,9 @@ const AccordionItem = ({ data, isActive, onClick }: AccordionItemProps) => {
           isActive ? "max-h-0 " : "max-h-full"
         }  overflow-hidden transition-all duration-300 ease-in-out`}
       >
-        <div className="p-4 text-gray-500">{answer}</div>
+        <div className="border-b border-black/50 p-8 text-gray-500">
+          {answer}
+        </div>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import fleetImg from "../assets/fleet.png";
 
 const Fleet = () => {
   return (
-    <section className="mx-auto my-4 border border-black lg:h-screen">
+    <section className="mx-auto my-4 lg:h-[95vh]">
       <div className="flex h-full flex-col items-center justify-between">
         <div className="flex w-full flex-col gap-10 bg-gray-800 p-5 py-16 text-center text-white">
           <h1 className="text-5xl font-bold">

@@ -1,6 +1,7 @@
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Icon from "../utils/Icon";
 
 type NavLinkRenderProps = {
   isActive: boolean;
@@ -34,7 +35,9 @@ const Header = () => {
         {/* Desktop navbar */}
         <div className="flex items-center justify-between font-medium">
           <nav>
-            <NavLink to="/">Logo</NavLink>
+            <NavLink to="/">
+              <Icon type="carLogo" />
+            </NavLink>
           </nav>
           <nav className="hidden lg:flex [&>span:not(:first-child)]:ml-4">
             <span>

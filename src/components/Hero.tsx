@@ -3,7 +3,7 @@ import HeroCar from "../assets/hero-car-1.png";
 
 const Hero = () => {
   return (
-    <section className="mx-auto my-4 h-[80vh] max-w-7xl p-2 lg:h-[75vh]">
+    <section className="mx-auto my-4 mb-20 h-[80vh] max-w-7xl p-2 lg:mb-0 lg:h-[75vh]">
       <div className="flex h-full">
         <div className="flex h-full w-full flex-col justify-center text-pretty  p-3 lg:w-[40%]">
           <p className="my-2 text-xl font-extrabold">Ready to hit the road?</p>
@@ -12,7 +12,7 @@ const Hero = () => {
             our car rentals
           </h1>
           <p className="my-8 leading-relaxed text-gray-600 antialiased">
-            Cruise in style without breaking the bank – we offer unbeatable
+            Cruise in style without breaking the bank we offer unbeatable
             prices, unlimited miles, and flexible pick-up choices.
           </p>
           <div className="flex flex-col gap-4 lg:mx-0 lg:flex-row lg:gap-0">

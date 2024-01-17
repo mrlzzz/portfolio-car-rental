@@ -40,3 +40,25 @@ h6 {
   /* background-attachment: fixed; */
   background-position: center 10px;
 }
+
+/* Scrollbar styling */
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(249 115 22);
+    border-radius: 0.1rem;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgb(195, 92, 18);
+    cursor: pointer;
+  }
+}

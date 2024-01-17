@@ -1,19 +1,19 @@
 import Icon from "../utils/Icon";
-import HeroCar from "../assets/hero-car.png";
+import HeroCar from "../assets/hero-car-1.png";
 
 const Hero = () => {
   return (
     <section className="mx-auto my-4 h-[75vh] max-w-7xl p-2">
       <div className="flex h-full">
         <div className="flex h-full w-full flex-col justify-center text-pretty  p-3 lg:w-[40%]">
-          <p className="my-2 text-xl font-extrabold">Plan your trip now</p>
+          <p className="my-2 text-xl font-extrabold">Ready to hit the road?</p>
           <h1 className="text-5xl/tight font-bold">
-            Save <span className="text-orange-500">big</span> with our car
-            rental
+            Score fantastic <span className="text-orange-500">deals</span> on
+            our car rentals
           </h1>
           <p className="my-8 leading-relaxed text-gray-600 antialiased">
-            Rent the car of your dreams. Unbeatable prices, unlimited miles,
-            flexible pick-up options and much more.
+            Cruise in style without breaking the bank – we offer unbeatable
+            prices, unlimited miles, and flexible pick-up choices.
           </p>
           <div className="flex flex-col gap-4 lg:mx-0 lg:flex-row lg:gap-0">
             <button className="mr-6 w-full rounded-sm bg-orange-500 px-7 py-4 font-bold text-white shadow-[5px_5px_0_0_rgba(0,0,0,.2)] transition-all duration-150 hover:brightness-95 active:scale-95 active:shadow-none lg:w-fit">

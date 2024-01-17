@@ -2,7 +2,7 @@ import Icon from "../utils/Icon";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center bg-gray-800 p-2 text-gray-200 lg:h-[50vh]">
+    <footer className="flex flex-col items-center justify-center bg-gray-800 p-2 text-gray-200 lg:h-[50vh]">
       <section className="mx-auto flex h-full w-full max-w-7xl flex-col gap-10  p-3 py-10 text-center lg:flex-row lg:gap-6 lg:py-20 lg:text-left">
         <div className="flex flex-1 flex-col gap-4">
           <h1 className="text-xl ">
@@ -82,6 +82,34 @@ const Footer = () => {
           </form>
         </div>
       </section>
+      <div className="mb-10 flex flex-row text-sm text-gray-400">
+        <p className="border-t border-gray-500 px-3 pt-4 text-center lg:flex lg:items-center">
+          Replicated by{" "}
+          <span className="cursor-pointer transition-transform duration-200 ease-in-out hover:-translate-y-1">
+            <a
+              className="mx-1 text-white"
+              href="https://pawel-dev-portfolio.vercel.app"
+            >
+              @mrl
+            </a>
+          </span>
+          based on
+          <span className="cursor-pointer transition-transform duration-200 ease-in-out hover:-translate-y-1">
+            <a
+              className="mx-1 text-white"
+              href="https://www.stefantopalovic.com/"
+            >
+              Stefan Topalovic
+            </a>
+          </span>
+          and
+          <span className="cursor-pointer transition-transform duration-200 ease-in-out hover:-translate-y-1">
+            <a className="mx-1 text-white" href="https://xpeedstudio.com/">
+              XpeedStudio
+            </a>
+          </span>
+        </p>
+      </div>
     </footer>
   );
 };
